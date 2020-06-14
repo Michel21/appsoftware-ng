@@ -1,0 +1,72 @@
+@import "../assets/scss/global";
+
+.getmestres___container_body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .logo{
+    height: 24px;
+    padding: 10px;
+    background: #589fc0;
+    max-width: 100%;
+    border-radius: 5px;
+    @include responsive-media($for-desktop-up){
+      width: 100% !important;
+    }
+  }
+  .router-outlet{
+    min-height: 87.7vh;
+    margin-top: 60px;
+  }
+  .active {
+    color: #386442 !important;
+    font: bold;
+  }
+  mat-toolbar{
+    background: #fff !important;
+    font-size: 18px;
+    font-weight: 300;
+    color: #4c4c4c;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    }
+    .getmestres___toolbar {
+      position: fixed;
+      z-index: 2;
+    }
+
+    .getmestres___side-nav-container {
+      flex: 1;
+    }
+
+    .clear-margin-top {
+      margin-top: 0 !important;
+    }
+
+    mat-sidenav-content {
+      margin-top: 20;
+    }
+
+    mat-sidenav mat-nav-list {
+      min-width: 250px;
+      &.mat-list-item {
+          margin-left: 20px;
+        }
+        .mat-subheader {
+          margin-left: 0px !important;
+        }
+        .mat-subheader:first-child {
+          margin-top: 0px;
+        }
+
+    }
+}
+.username {
+  margin: 20px;
+}
+

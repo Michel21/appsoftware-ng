@@ -1,0 +1,21 @@
+$for-phone-only: 'screen and (max-width: 599px)';
+$for-tablet-portait-up: 'screen and (min-width: 600px)';
+$for-tablet-portait-only: 'screen and (min-width: 600px) and (max-width: 899px)';
+$for-tablet-landscape-up: 'screen and (min-width: 900px)';
+$for-tablet-landscape-only: 'screen and (min-width: 900px) and (max-width: 1199px)';
+$for-desktop-up: 'screen and (min-width: 1200px)';
+$for-desktop-only: 'screen and (min-width: 1200px) and (max-width: 1799px)';
+$for-big-desktop-up: 'screen and (min-width: 1800px)';
+
+@mixin responsive-media($media) {
+  @if $media{
+    @media #{$media}{
+      @content
+    }
+  }
+}
+
+@mixin responsive-media-devices($device-1, $device-2) {
+  @include responsive-media($device-1) {@content}
+  @include responsive-media($device-2) {@content}
+}

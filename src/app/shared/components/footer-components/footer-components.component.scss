@@ -1,0 +1,82 @@
+@import "../../../../assets/scss/global";
+
+.Adjustment{
+  margin-bottom: 30px;
+}
+
+.Footer {
+  background: #eee;
+  &_img {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 190px;
+  }
+
+  &_condicoes_gerais {
+    height: auto;
+    font-size: 13px;
+  }
+
+  &_condicoes_color{
+    color: #777;
+  }
+
+  &_title {
+    margin-top: 20px;
+    color: #999;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &_title2 {
+    color: #777;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration:none;
+  }
+  @media screen and (max-width: 1280px) {
+    &_img {
+      width: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .Footer {
+    margin-top: 20px;
+    &_title {
+      margin-top: 35px;
+      margin-left: 20px;
+    }
+    &_about_bit {
+      margin-top: 50px;
+    }
+    &_condicoes_gerais {
+      margin-left: 20px;
+    }
+
+    &_img {
+      margin-left: 20px;
+    }
+
+    &_title2 {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Footer {
+    margin: 0 auto;
+    &_about_bit {
+      margin-top: 0px;
+    }
+
+    &_condicoes_gerais {
+      margin-left: 20px;
+      margin-top: -25px;
+    }
+  }
+}

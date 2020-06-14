@@ -1,0 +1,12 @@
+<div class="Loader">
+    <div class="spinner spinner-disable">
+        <img src="../../../../assets/images/load.gif" alt="appsoftware">
+        <span class="waitingAssinatura" *ngIf="msgErroValidaAssinatura">{{msgErroValidaAssinatura}}</span>
+        <!-- <img src="./assets/img/loader/loader2_gif.gif" alt="Bit Seguros"> -->
+    </div>
+    <div class="spinner spinner-disable2">
+        <img src="./../../../assets/images/load.gif" alt="appsoftware">
+        <span class="waitingAssinatura" *ngIf="msgErroValidaAssinatura">{{msgErroValidaAssinatura}}</span>
+    </div>
+    <ng-content></ng-content>
+</div>
